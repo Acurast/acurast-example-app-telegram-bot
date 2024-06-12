@@ -1,6 +1,6 @@
 # Acurast Example App: Telegram Bot
 
-This repository shows how to set up
+This repository shows how to set up and run a project on Acurast.
 
 ## Setup
 
