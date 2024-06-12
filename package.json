@@ -1,0 +1,27 @@
+{
+  "name": "acurast-example-app-telegram-bot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "build": "tsc",
+    "bundle": "npm run build && webpack --mode=production --config webpack.config.js --entry=./dist/index.js --output-path ./dist && terser --ecma=12 ./dist/main.js -o ./acurast-example-app-telegram-bot.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andreas Gassmann <andy@acurast.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "debug": "^4.3.5",
+    "node-telegram-bot-api": "^0.66.0",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/node-telegram-bot-api": "^0.64.6",
+    "prettier": "^3.3.2",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
